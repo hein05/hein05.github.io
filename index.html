@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="responsive.css">
         <link rel="stylesheet" type="text/css" href="gridStyle.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -17,12 +18,13 @@
         <div class="gridLayout">
             <div class="navBar">
                 <ul>
-                    <li><a class="#active" href="app">Apps</a></li>
-                    <li><a href="#3darts">Artworks</a></li>
+                    <li><a href="#appSection">Apps</a></li>
+                    <li><a href="#artSection">Artworks</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
             </div>
+
             <div class="decoText">
                 <div class="decoBoxh1"> 
                     <h1> 
@@ -52,17 +54,17 @@
             </div>
 
             <div class="cardContainer">
-                <div class="appSection">
+                <div class="appSection" id="appSection">
                     <div class="pseudohContainerApp"></div>
                     <div class="hContainerApp">
                         <h2> Apps</h2>
                     </div>
                     <div class="decoappSection"></div>
                     <div class="secTitle">
-                        <a class="icon" href="#icon">
+                        <a class="icon" href="https://itunes.apple.com/us/app/8queens-origin/id1358454818?mt=8" target="_blank">
                            <img src="gameImages/icon.png" alt="icon"> 
                         </a>
-                        <a class="appstore" href="#appstore">
+                        <a class="appstore" href="https://itunes.apple.com/us/app/8queens-origin/id1358454818?mt=8" target="_blank">
                             <img src="gameImages/appstore.png" alt="appstore">
                         </a>
                     </div>
@@ -107,7 +109,7 @@
                         <hr>
                     </div>
                 </div>
-                <div class="artSection">
+                <div class="artSection" id="artSection">
                     <div class="lineBreak"></div>
                     <div class="pseudohContainerArt"></div>
                     <div class="hContainerArtwork">
@@ -241,13 +243,16 @@
                     </div> -->
                 </div>
             </div>
+
             <div class="footer">
-                <h4> FOOTER  </h4>
+                <h4> &#169 2018 MagicBitStudio , &nbsp; New York  </h4>
             </div>
             
         </div class="gridLayout">
+
         <!-- <script src="divScroll.js"></script> -->
-        <script src="textAnimation.js"></script>
+        <script src="mainPageAnim.js"></script>
+        <script src="menuScroll.js"></script>
         <script src="collapseAnimation.js"></script>
         <!-- <script src="ownTextAnim.js"></script> -->
     </body>

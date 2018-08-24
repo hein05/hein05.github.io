@@ -11,9 +11,9 @@
             linear-gradient(143deg, #146adb ,#11d8d8 80%),
             linear-gradient(243deg, #23d197 ,#772f12 80%);
 
-    --game-bg:  linear-gradient(45deg,#1c1e29,#201010 60%),
-                linear-gradient(137deg,#3b2606,#1b1b16 60%),
-                linear-gradient(281deg,#0f010c,#290944 75%);
+    --game-bg:  linear-gradient(45deg,#1c1e29,#331f08 60%),
+                linear-gradient(137deg,#996920,#1b1b16 60%),
+                linear-gradient(281deg,#0f010c,#793fa8 75%);
 
     --main-bg:  linear-gradient(75deg,#221b1b,#212527 60%),
                 linear-gradient(195deg,#3f1999,#801ecc 90%),
@@ -42,9 +42,12 @@ button:focus {
 }
 
 .gridLayout {
+    background: var(--art-bg);
     display: grid;
     width: 100vw;
+    /* height: 100%; */
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
 
 .navBar {
@@ -52,7 +55,7 @@ button:focus {
     grid-row: 1/2;
     position: fixed;
     width: 100%;
-    height: 8vh;
+    height: 5vw;
     align-content: center;
     box-shadow: 0px 2px 8px ;
     z-index: 3;
@@ -60,18 +63,18 @@ button:focus {
     .navBar li {
         display: inline-block;
         background-color: transparent;
-        padding: 10px 50px;
+        padding: 1vw 5vw;
         border-radius: 10px;
     }
     .navBar ul {
         text-align: center;
-        margin-top: 10px;
+        margin-top: 1vw;
     }
     .navBar a {
         position: relative;
         text-decoration: none;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 18px;
+        font-size: 1.4vw;
         color: rgb(211, 202, 202);       
     } 
     .navBar a:hover {
@@ -100,16 +103,18 @@ button:focus {
 
 .decoText {
     grid-row: 2/3;
-    position: fixed;
+    position: absolute;
     display: block;
+    /* align-self: center; */
+    /* justify-self: center; */
     /* background-repeat: no-repeat, repeat; */
     /* background-image: url(backgroundImages/decoTextBg.png); */
     /* background-color: var(--art-bg); */
     background: var(--art-bg);
     margin-top: 60px;
     width: 100%;
-    height: 100vh;
-    z-index: -1;
+    height: 50vw;
+    z-index: 1;
     /* margin-bottom: 5px; */
 }   
     /* .decoText h1 {
@@ -130,6 +135,8 @@ button:focus {
         position: relative;
         width: 60%;
         height: 10vw;
+        opacity: 0;
+        /* visibility: hidden; */
         /* background-image: url(backgroundImages/funcTextBox.png); */
         box-shadow: 0 2px 5px var(--shadow);
         border-radius: .4em;
@@ -148,10 +155,11 @@ button:focus {
         
         z-index: -1;
         box-shadow: 2px 2px 2px 0px var(--shadow);
-        border-radius: .1em;
+        /* border-radius: .1em; */
         left: 50%;
         bottom: 0%;
-        /* border-bottom: 0px; */
+        border-bottom: 4px solid var(--art-bg);
+        border-right: 4px solid var(--art-bg);
         transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -186,6 +194,7 @@ button:focus {
         position: relative;
         width: 43vw;
         height: 15vw;
+        opacity: 0;
         /* background-image: url(backgroundImages/funcTextBox.png); */
         box-shadow: 2px 2px 5px var(--shadow);
         border-radius: .4em;
@@ -299,7 +308,8 @@ button:focus {
     /* grid-template-columns: 20% 60% auto; */
     /* margin-top: 60px; */
     /* box-shadow: 0 -2px 10px; */
-    margin-top: 100vh;
+    margin-top: 54vw;
+    /* margin-bottom: 5%; */
     grid-row-gap: 3em;
     /* grid-gap: 5px; */
     
@@ -460,12 +470,12 @@ button:focus {
             }
             .pseudohContainerApp{
                 position: absolute;
-                background-color: rgb(31, 5, 5);
+                background-color: rgb(8, 8, 8);
                 /* content: ''; */
-                z-index: 1;
+                z-index: -1;
                 left: 4.25%;
-                top: -1.8%;
-                width: 10vh;
+                top: -1vw;
+                width: 5vw;
                 height: 1vw;
                 /* transform: skew(-15deg); */
             }
@@ -473,10 +483,10 @@ button:focus {
                 position: absolute;
                 background-color: rgb(2, 18, 26);
                 /* content: ''; */
-                z-index: 1;
+                z-index: -1;
                 left: 4.25%;
-                top: -0.84%;
-                width: 10vh;
+                top: -0.94%;
+                width: 5vw;
                 height: 1vw;
                 /* transform: skew(-15deg); */
             }
@@ -491,7 +501,7 @@ button:focus {
                 border-bottom-right-radius: 7px;
                 border-bottom-left-radius: 7px;
                 width: 10vw;
-                height: 10vh;
+                height: 5vw;
                 box-shadow: 1px 4px 8px;
                 transform: skewX(15deg);
                 z-index: 1;
@@ -517,14 +527,15 @@ button:focus {
             } */
             .hContainerApp h2, .hContainerArtwork h2 {
                 color: rgb(215, 217, 243);
-                transform: skewX(-15deg);
+                transform: skewX(-10deg);
                 font-family: 'Fjalla One', sans-serif;
+                font-size: 2vw;
                 text-shadow: #2c867a 2px 2px;
             }
         .gameCard {
             background-color: rgba(102, 51, 153, 0);
             /* width: auto; */
-            height: 80vh;
+            height: 45vw;
             /* display: block; */
             /* background-color: transparent; */
             /* margin-bottom: 20px; */
@@ -606,7 +617,7 @@ button:focus {
             grid-template-rows: repeat(8, auto);
             width: 90%;
             height: auto;
-            grid-column-gap: 2vw;
+            grid-column-gap: 1vw;
             grid-row-gap: 2vh;
             grid-template-columns: 1fr 1fr;
             /* height: 10vh; */
@@ -674,13 +685,15 @@ button:focus {
             /* background-color: #4b55637c; */
             background: var(--art-img-bg);
             display: block;
+            position: relative;
             overflow: hidden;
             box-shadow:0px 0px 8px #050e16;
             border-radius: 3%;
             /* transform: translateX(-50%);  */
-            max-height: 0;
-            margin-bottom: 5vh;
-            transition: all 1.5s ease-in-out;
+            /* max-height: 0; */
+            height: 0px;
+            /* margin-bottom: 0.5vw; */
+            /* transition: all 0.4s ease-in-out; */
         }
         .artSection .content img {
             width: 100%;
@@ -770,11 +783,15 @@ button:focus {
 
 .footer {
     background-color: black;
-    height: 50px;
-    grid-row: 3/3;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    /* grid-row: 3/3; */
     grid-column: 1 / 3;
-    max-width: 100vw;
+    text-align: center;
+    bottom: 0%;
 }
 .footer h4 {
     color: aliceblue;
+    margin-top: 1%;
 }
