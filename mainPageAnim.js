@@ -40,18 +40,23 @@ $(document).ready(function() {
 
 
   var yPos, bg, boxLeft,boxRight ;
+  var appSection, decoAppSection;
   
   function parallax () {
     yPos = window.pageYOffset;
     bg = document.getElementsByClassName("decoText");
-    
+    appSection = document.getElementsByClassName("appSection");
+    decoAppSection = document.getElementsByClassName("decoappSection");
+
+
     boxLeft = document.getElementsByClassName('decoBoxh1');
     boxRight = document.getElementsByClassName('decoBoxh3');
 
-    boxLeft[0].style.right = (yPos/10) + '%';
-    boxRight[0].style.left = (yPos/10) + '%';
+    boxLeft[0].style.right = (yPos/7) + '%';
+    boxRight[0].style.left = (yPos/5) + '%';
     bg[0].style.top = -(yPos * 0.6) + "px";
-
+    appSection[0].style.top = yPos * 0.3 + 'px';
+    decoAppSection[0].style.left = (yPos/30) + '%';
     // $('.decoBoxh1').css({
     //   'right' : (yPos/4) + '%'
     // });

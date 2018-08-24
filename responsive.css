@@ -1,5 +1,102 @@
 @media only screen and (max-width: 600px) {
-    div.navBar {
+    div.navBar .menu {
+        background-color: rgb(66, 66, 63);
+        /* border-bottom: 0.1vw solid rgb(211, 202, 202); */
         display: none;
+        width: 100%;
+        text-align: center;
     }
+    div.navBar .menu a {
+        /* background/-color: blue; */
+        display: block;
+        border-bottom: 0.01vw solid rgb(211, 202, 202);
+        clear: right;
+        padding: 1.5vw;
+    }
+    div.navBar .menu a::before {
+        position: relative;
+    }
+    div.navBar label {
+        /* background-color: blue; */
+        /* align-self: center; */
+        /* justify-self: center; */
+        display: block;
+        margin-top: 1%;
+        margin-right: 2%;
+        /* text-align: right; */
+        float: right;
+        cursor: pointer;
+    }
+    div.navBar label:hover {
+        color: rgb(34, 21, 21);
+    }
+    div.navBar #toggle:checked + .menu {
+        display: block;
+    }
+
+    div.decoText {
+        width: 100%;
+        height: 100%;
+    }
+
+    div.decoBoxh1 {
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+    }
+    /* div.decoBoxh3 {
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+    } */
+
+    div.appSection {
+        grid-template-areas: 'header header header  header header'
+                              'main main mRight mRight mRight'
+                              'main main mRight mRight mRight'
+                              'main main mRight mRight mRight'
+                             'footer footer footer footer footer';
+        /* margin-bottom: 5%; */
+    }
+    div.appSection .hContainerApp {
+        grid-area: header;
+    }
+    div.appSection .gameCard {
+        grid-area: main;
+    }
+        div.appSection .gameCard img {
+            width: 70vw;
+            margin-bottom: 0%;
+        }
+    div.appSection .info {
+        grid-area: mRight;
+    }
+    div.appSection .secTitle {
+        /* background-color: aqua; */
+        grid-area: footer;
+        /* display: inline-block; */
+        border-top: 0.1vw dashed  rgb(226, 145, 24);
+        margin-top: 3%;
+        width: 100%;
+        height: auto;
+    }
+    div.appSection .secTitle .icon img {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 15%;
+    }
+    div.appSection .secTitle .appstore img {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 20%;
+        width: 20%;
+    }
+
+    div.artGalleryCard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+
 }
