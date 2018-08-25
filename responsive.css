@@ -1,4 +1,8 @@
 @media only screen and (max-width: 600px) {
+    div.navBar {
+        width: 100%;
+        height: 20vw;
+    }
     div.navBar .menu {
         background-color: rgb(66, 66, 63);
         /* border-bottom: 0.1vw solid rgb(211, 202, 202); */
@@ -12,6 +16,7 @@
         border-bottom: 0.01vw solid rgb(211, 202, 202);
         clear: right;
         padding: 1.5vw;
+        font-size: 5vw;
     }
     div.navBar .menu a::before {
         position: relative;
@@ -20,6 +25,7 @@
         /* background-color: blue; */
         /* align-self: center; */
         /* justify-self: center; */
+        font-size: 10vw;
         display: block;
         margin-top: 1%;
         margin-right: 2%;
@@ -33,23 +39,39 @@
     div.navBar #toggle:checked + .menu {
         display: block;
     }
-
     div.decoText {
         width: 100%;
         height: 100%;
+        margin-top: 20%;
     }
-
     div.decoBoxh1 {
         width: 100%;
         height: auto;
         margin-left: 0%;
     }
-    /* div.decoBoxh3 {
+    div.decoBoxh1 h1{
+        text-align: center;
+        font-size: 6vw;
+        text-shadow: 0.3vw 0.3vw 0.3vw #b8f807;
+    }
+    div.decoBoxh3 {
+        display: block;
+        position: relative;
         width: 100%;
-        height: auto;
+        height: 30vw;
+        border-radius: 1%;
+        margin-top: 8%;
         margin-left: 0%;
-        margin-right: 0%;
-    } */
+        box-shadow: 2px 2px 5px #ca1d48;
+        /* margin-right: 0%; */
+    }
+    div.decoBoxh3 h3 {
+        text-align: center;
+        font-size: 5vw;
+        text-shadow: 0.3vw 0.3vw 0.3vw #b8f807;
+        line-height: 4vw;
+        margin-left: 10%;
+    }
 
     div.appSection {
         grid-template-areas: 'header header header  header header'
@@ -58,9 +80,15 @@
                               'main main mRight mRight mRight'
                              'footer footer footer footer footer';
         /* margin-bottom: 5%; */
+        margin-top: 30%;
     }
     div.appSection .hContainerApp {
         grid-area: header;
+        width: 20vw;
+        height: 10vw;
+    }
+    div.appSection .hContainerApp h2 {
+        font-size: 4vw;
     }
     div.appSection .gameCard {
         grid-area: main;
@@ -98,5 +126,15 @@
         grid-template-rows: auto;
         grid-auto-flow: row;
     }
-
+    div.artSection .hContainerArtwork {
+        width: 20vw;
+        height: 10vw;
+    }
+    div.artSection .hContainerArtwork h2 {
+        font-size: 4vw;
+    }
+    div.artSection .collapsible p {
+        font-size: 8vw;
+        text-shadow: #b8f807 0.3vw 0.3vw 0.2vw;  
+    }
 }
