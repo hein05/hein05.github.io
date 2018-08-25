@@ -1,7 +1,7 @@
 @media only screen and (max-width: 600px) {
     div.navBar {
         width: 100%;
-        height: 20vw;
+        height: 17vw;
     }
     div.navBar .menu {
         background-color: rgb(66, 66, 63);
@@ -46,12 +46,12 @@
     }
     div.decoBoxh1 {
         width: 100%;
-        height: 20vw;
+        height: 15vw;
         margin-left: 0%;
     }
     div.decoBoxh1 h1{
         text-align: center;
-        font-size: 6vw;
+        font-size: 5vw;
         text-shadow: 0.3vw 0.3vw 0.3vw #b8f807;
     }
     div.decoBoxh3 {
