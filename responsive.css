@@ -51,8 +51,9 @@
     }
     div.decoBoxh1 h1{
         text-align: center;
-        font-size: 5vw;
+        font-size: 6vw;
         text-shadow: 0.3vw 0.3vw 0.3vw #b8f807;
+        word-spacing: 0vw;
     }
     div.decoBoxh3 {
         display: block;
@@ -125,6 +126,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-auto-flow: row;
+        margin-top: 10%;
     }
     div.artSection .hContainerArtwork {
         width: 20vw;
