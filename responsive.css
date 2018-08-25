@@ -46,7 +46,7 @@
     }
     div.decoBoxh1 {
         width: 100%;
-        height: auto;
+        height: 20vw;
         margin-left: 0%;
     }
     div.decoBoxh1 h1{
@@ -80,7 +80,7 @@
                               'main main mRight mRight mRight'
                              'footer footer footer footer footer';
         /* margin-bottom: 5%; */
-        margin-top: 30%;
+        margin-top: 50%;
     }
     div.appSection .hContainerApp {
         grid-area: header;
