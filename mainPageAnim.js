@@ -55,7 +55,7 @@ $(document).ready(function() {
     boxLeft[0].style.right = (yPos/7) + '%';
     boxRight[0].style.left = (yPos/5) + '%';
     bg[0].style.top = -(yPos * 0.6) + "px";
-    appSection[0].style.top = yPos * 0.3 + 'px';
+    appSection[0].style.top = yPos * 0.13 + 'px';
     decoAppSection[0].style.left = (yPos/30) + '%';
     // $('.decoBoxh1').css({
     //   'right' : (yPos/4) + '%'
