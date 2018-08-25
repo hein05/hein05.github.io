@@ -7,19 +7,19 @@
 :root {
     --art-img-bg: linear-gradient(to bottom, #c4c1bc1a 0%, #60615c8a 100%);
     
-    --art-bg:linear-gradient(43deg, #633628 ,#384444 80%),
+    --art-bg:linear-gradient(43deg, #ff3c00 ,#164b4b 80%),
             linear-gradient(143deg, #146adb ,#11d8d8 80%),
             linear-gradient(243deg, #23d197 ,#772f12 80%);
 
-    --game-bg:  linear-gradient(45deg,#1c1e29,#331f08 60%),
-                linear-gradient(137deg,#996920,#1b1b16 60%),
+    --game-bg:  linear-gradient(45deg,#1c1e29,#a1300e 90%),
+                linear-gradient(137deg,#996920,#f1f100 60%),
                 linear-gradient(281deg,#0f010c,#793fa8 75%);
 
-    --main-bg:  linear-gradient(75deg,#221b1b,#212527 60%),
+    --main-bg:  linear-gradient(75deg,#221b1b,#070000 60%),
                 linear-gradient(195deg,#3f1999,#801ecc 90%),
                 linear-gradient(281deg,#082024,#226988 75%);
     
-    --deco-bg: linear-gradient(45deg,#221b1b,#2b272e 90%),
+    --deco-bg: linear-gradient(45deg,#221b1b,#f8003e 90%),
                 linear-gradient(195deg,#516936,#68204c 90%),
                 linear-gradient(281deg,#5e3725,#522129 91%);
 
@@ -52,7 +52,7 @@ button:focus {
 }
 
 .navBar {
-    background-color: rgb(66, 66, 63);
+    background-color: rgb(20, 20, 1);
     grid-row: 1/2;
     position: fixed;
     width: 100%;
@@ -67,7 +67,7 @@ button:focus {
     .navBar label {
     display: none;
     /* font-size: 2vw; */
-    color: rgb(211, 202, 202);
+    color: rgb(255, 255, 255);
     }
     
     .navBar #toggle {
@@ -91,10 +91,10 @@ button:focus {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 1.8vw;
         padding: 0.5vw 3vw;
-        color: rgb(211, 202, 202);       
+        color: rgb(248, 246, 246);       
     } 
     .navBar a:hover {
-        color: rgb(34, 21, 21);
+        color: rgb(78, 31, 31);
     }
     .navBar a::before {
         background-color: brown;

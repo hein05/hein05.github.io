@@ -1,13 +1,18 @@
 $(document).ready(function() {
     $(".textAnim").lettering();
-    $(".button").lettering();
+    // $(".button").lettering();
   });
   
   // $(window).load(function() {
   //   $(".textAnim").lettering();
   //   $(".button").lettering();
   // });
-
+  // var userScrolling = false;
+  // window.onscroll = function () {
+  //   userScrolling = true;
+  //   console.log(userScrolling);
+  // }
+  // console.log(userScrolling);
 
   $(document).ready(function() {
     $('.decoBoxh1').fadeTo(3000, 1);
@@ -18,11 +23,6 @@ $(document).ready(function() {
   // $('.btn').click(function() {
   //   animateLetter();
   // });
-  
-  function fadeIn () {
-    boxLeft = document.getElementsByClassName('decoBoxh1');
-    boxLeft[0].style.opacity = 0.1;
-  }
 
 
   function animateLetter() {

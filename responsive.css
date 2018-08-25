@@ -13,7 +13,7 @@
     div.navBar .menu a {
         /* background/-color: blue; */
         display: block;
-        border-bottom: 0.01vw solid rgb(211, 202, 202);
+        border-bottom: 0.01vw solid rgb(241, 234, 234);
         clear: right;
         padding: 1.5vw;
         font-size: 5vw;
