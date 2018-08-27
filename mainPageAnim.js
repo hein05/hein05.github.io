@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  if(navigator.userAgent.indexOf("Firefox")!=-1){
+    alert("Currently, This Website work Best on Chrome >>> Opera >>> Safari(limited Animation)\n browsers");
+  }
     $(".textAnim").lettering();
     // $(".button").lettering();
   });
@@ -48,7 +51,6 @@ $(document).ready(function() {
     appSection = document.getElementsByClassName("appSection");
     decoAppSection = document.getElementsByClassName("decoappSection");
 
-
     boxLeft = document.getElementsByClassName('decoBoxh1');
     boxRight = document.getElementsByClassName('decoBoxh3');
 
@@ -73,8 +75,15 @@ $(document).ready(function() {
   //   boxRight[0].style.left = (yPos/4) + '%';
   // }
 
+  var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+               navigator.userAgent &&
+               navigator.userAgent.indexOf('CriOS') == -1 &&
+               navigator.userAgent.indexOf('FxiOS') == -1;
+    if(!isSafari) {
+      window.addEventListener('scroll', parallax);
+    }
+ 
 
-  window.addEventListener('scroll', parallax);
   // window.addEventListener('scroll', animateBox);
   // console.log(image);
 

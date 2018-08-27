@@ -14,6 +14,10 @@ $(document).ready(function () {
             }, 800, function() {
                 // window.location.hash = hash;
             });
+        } else {
+            alert("Soon to be updated. Cheers    :))))");
         }
     });
 });
+
+
