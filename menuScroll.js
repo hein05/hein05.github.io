@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("a").click(function (e) {
+    $(".menu a").click(function (e) { //Updated to only check links on "Menu Class"
         if (document.documentElement.clientWidth <= 600) {
             var toggle = document.getElementById("toggle");
             if(toggle.checked) {
